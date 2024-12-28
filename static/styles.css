@@ -1,0 +1,352 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFF;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* 중앙 정렬 */
+    text-align: center;
+    font-family: 'SB AggroOTF', sans-serif;
+    font-size: 30px;
+    color: #000;
+    width: fit-content;
+    height: fit-content;
+    gap: 33px; /* 요소들 간 간격 */
+}
+
+/* .background 클래스에 배경 이미지 설정 */
+.background {
+    background-image: url('balloon.jpg'); /* 배경 이미지 설정 */
+    background-size: cover; /* 배경 이미지가 화면을 완전히 덮도록 */
+    background-position: center center; /* 배경 이미지 중앙 정렬 */
+    background-repeat: no-repeat; /* 배경 이미지가 반복되지 않도록 */
+    width: 500vh;
+    height: 100vh; /* 화면 높이에 맞게 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .good 클래스 스타일 */
+.good {
+    font-size: 100px;
+    font-family: 'SB AggroOTF', sans-serif;  /* 원하는 폰트 설정 */
+    font-weight: bold;  /* 굵은 글씨 */
+    color: #4769ff;  /* 텍스트 색상 */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);  /* 텍스트 그림자 */
+    background: linear-gradient(to right, #f75353, #4744fa);  /* 그라디언트 배경 */
+    -webkit-background-clip: text;  /* 텍스트에 배경 적용 */
+    color: transparent;  /* 배경을 텍스트에만 적용하고 텍스트 색상은 투명하게 */
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 5px;  /* 글자 간격 */
+    text-align: center;  /* 텍스트 중앙 정렬 */
+    animation: textAnimation 3s ease-in-out infinite;  /* 애니메이션 */
+}
+
+.good-child{
+    font-size: 44px;
+    font-family: 'SB AggroOTF', sans-serif;  /* 원하는 폰트 설정 */
+    font-weight: bold;  /* 굵은 글씨 */
+    color: #4769ff;  /* 텍스트 색상 */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);  /* 텍스트 그림자 */
+    background: linear-gradient(to right, #f75353, #4744fa);  /* 그라디언트 배경 */
+    -webkit-background-clip: text;  /* 텍스트에 배경 적용 */
+    color: transparent;  /* 배경을 텍스트에만 적용하고 텍스트 색상은 투명하게 */
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 5px;  /* 글자 간격 */
+    text-align: center;  /* 텍스트 중앙 정렬 */
+    animation: textAnimation 3s ease-in-out infinite;  /* 애니메이션 */
+}
+
+/* 애니메이션: 텍스트 크기 확대 효과 */
+@keyframes textAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* 팀 이름 스타일 */
+.team-name {
+    position: absolute;  
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Roboto', sans-serif;  /* 폰트 변경 */
+    z-index: 100;
+}
+   
+.custom-button {
+    display: flex;
+    width: 282px;
+    height: 116px;
+    padding: 38px 32px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: #BFCDFA;
+    box-shadow: 5px 5px 10px 0px rgba(170, 170, 204, 0.50), -5px -5px 10px 0px #FFF;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    border: none;
+    color: #000;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #92B4EC;
+}
+
+.svg-container {
+    display: flex;
+    align-items: center;
+    gap: 77px;
+    margin-top: 20px;
+}
+
+.svg-container svg {
+    width: 85px;
+    height: auto;
+}
+
+/* 이미지 배치 */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* 이미지 간격 */
+}
+
+.image-box {
+    flex-shrink: 0;
+    height: 136px;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.image-box1 {
+    width: 1100px;
+    background-image: url(작은별.png);  /* 노래 1 첫 번째 이미지 경로 */
+}
+
+.image-box2 {
+    width: 1100px;
+    height: 370px;
+    background-image: url(ETA.png);  /* 노래 1 두 번째 이미지 경로 */
+}
+
+.image-box3 {
+    width: 1100px;
+    height: 160px;
+    background-image: url(연세여사랑한다.png);  /* 노래 1 첫 번째 이미지 경로 */
+}
+
+/* 버튼 스타일 */
+.custom-record-button {
+    display: flex;
+    width: 244px;
+    height: 88px;
+    padding: 24px 32px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: #F5F5FA;
+    box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.50), 
+                5px 5px 10px 0px rgba(170, 170, 204, 0.25), 
+                10px 10px 20px 0px rgba(170, 170, 204, 0.50), 
+                -10px -10px 20px 0px #FFF;
+
+    color: #326BFF;
+    text-align: center;
+    font-family: ABeeZee;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 111.111% */
+
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+/* 홈으로 돌아가기 버튼 스타일 */
+.home-button {
+    background-color: hsla(232, 75%, 68%, 1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* 홈으로 돌아가기 버튼에 마우스를 올렸을 때 스타일 */
+.home-button:hover {
+    background-color: #BFCDFA;
+}
+
+/* 분석 버튼 스타일 */
+.uploadButton {
+    background-color: hsla(232, 75%, 68%, 1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.uploadButton:hover {
+    background-color: #BFCDFA;
+}
+
+.loading-screen h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.loading-screen p {
+    font-size: 16px;
+}
+
+/* drop-zone 기본 스타일 */
+.drop-zone {
+    width: 100%;
+    max-width: 400px;
+    height: 150px;
+    margin: 20px auto;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* 드래그 중인 상태 */
+.drop-zone.dragover {
+    border-color: #007bff;
+    background-color: #e0f7ff;
+    color: #007bff;
+}
+
+/* drop-zone 내부 텍스트 */
+.drop-zone p {
+    margin: 0;
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* 제목 페이지 스타일 */
+.title-page {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title-page h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.title-page p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* 로딩 화면 스타일 */
+.loading-screen {
+    width: 700px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+    box-shadow: 7.496px 7.496px 2.998px 0px rgba(0, 0, 0, 0.25);
+    background-color: #f3f3f3;
+    margin: 50px auto;
+    position: relative;
+}
+
+/* 텍스트 스타일 */
+.loading-screen h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.loading-screen p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 이발소 로딩바 스타일 */
+.barber-pole-loading {
+    position: relative;
+    width: 500px;  /* 로딩바의 크기 */
+    height: 50px;
+    border-radius: 25px;
+    background-color: #fff;
+    overflow: hidden;  /* 바깥 영역은 숨기기 */
+}
+
+/* 색상 스트라이프가 들어갈 영역 */
+.stripes {
+    display: flex;
+    width: 500%;  /* 10개의 스트라이프, 로딩바보다 길게 설정 */
+    height: 100%;
+    position: absolute;
+    animation: moveLeft 5s linear infinite;
+}
+
+/* 각 색상 스트라이프 */
+.stripes .stripe {
+    width: 10%;  /* 10%로 설정하여 스트라이프 너비 축소 */
+    height: 100%;
+}
+
+/* 색상 정의 */
+.stripes .white {
+    background-color: gray;
+}
+
+.stripes .blue {
+    background-color: hsla(229, 57%, 39%, 1);
+}
+
+/* 색상 이동 애니메이션 */
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

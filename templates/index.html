@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음치 판별기</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Google Fonts에서 로보토 폰트 추가 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+    <div class="container">
+        <div class="team-name">6조 팀 프로젝트</div> <!-- 팀 이름 추가 -->
+        <h1>음치 판별기</h1>
+
+        <!-- 노래 1 버튼 -->
+        <div class="svg-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="102" height="82" viewBox="0 0 102 82" fill="none">
+                <path d="M29.9792 81.3333C46.053 81.3333 59.0833 72.3044 59.0833 61.1667C59.0833 50.0289 46.053 41 29.9792 41C13.9054 41 0.875 50.0289 0.875 61.1667C0.875 72.3044 13.9054 81.3333 29.9792 81.3333Z" fill="#7282EB"/>
+                <rect x="43.2083" y="11.6666" width="15.875" height="47.6667" fill="#7282EB"/>
+                <rect x="43.2083" y="0.666626" width="58.2083" height="22" rx="2" fill="#7282EB"/>
+            </svg>
+            
+            <a href="{{ url_for('song1') }}" class="track-button" data-track="little_star">
+
+                <button class="custom-button" data-track="little_star">작은 별</button>
+            </a>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="74" height="73" viewBox="0 0 74 73" fill="none">
+                <path d="M3.5 20C3.5 10.8873 10.8873 3.5 20 3.5H54C63.1127 3.5 70.5 10.8873 70.5 20V53C70.5 62.1127 63.1127 69.5 54 69.5H20C10.8873 69.5 3.5 62.1127 3.5 53V20Z" fill="white" stroke="#BFCDFA" stroke-width="7"/>
+            </svg>
+                        
+            <!-- 체크표시 아이콘 -->
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="75" height="79" viewBox="0 0 75 79" fill="none" style="display: none;">
+                <path d="M20 9.5H54C63.1127 9.5 70.5 16.8873 70.5 26V59C70.5 68.1127 63.1127 75.5 54 75.5H20C10.8873 75.5 3.5 68.1127 3.5 59V26C3.5 16.8873 10.8873 9.5 20 9.5Z" fill="white" stroke="#BFCDFA" stroke-width="7"/>
+                <line y1="-3.5" x2="30.7531" y2="-3.5" transform="matrix(0.715487 0.698627 -0.583573 0.812061 15.6182 34.3623)" stroke="#14B03D" stroke-width="7"/>
+                <line y1="-3.5" x2="62.1089" y2="-3.5" transform="matrix(0.588179 -0.808731 0.71106 0.703131 37.6213 55.8499)" stroke="#14B03D" stroke-width="7"/>
+            </svg>
+
+        </div>
+
+        <!-- 노래 2 버튼 -->
+        <div class="svg-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="102" height="82" viewBox="0 0 102 82" fill="none">
+                <path d="M29.9792 81.3333C46.053 81.3333 59.0833 72.3044 59.0833 61.1667C59.0833 50.0289 46.053 41 29.9792 41C13.9054 41 0.875 50.0289 0.875 61.1667C0.875 72.3044 13.9054 81.3333 29.9792 81.3333Z" fill="#7282EB"/>
+                <rect x="43.2083" y="11.6666" width="15.875" height="47.6667" fill="#7282EB"/>
+                <rect x="43.2083" y="0.666626" width="58.2083" height="22" rx="2" fill="#7282EB"/>
+            </svg>
+
+            <a href="{{ url_for('song2') }}" class="track-button" data-track="ETA_NewJeans">
+                <button class="custom-button" data-track="ETA_NewJeans">ETA - NewJeans</button>
+            </a>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="74" height="73" viewBox="0 0 74 73" fill="none">
+                <path d="M3.5 20C3.5 10.8873 10.8873 3.5 20 3.5H54C63.1127 3.5 70.5 10.8873 70.5 20V53C70.5 62.1127 63.1127 69.5 54 69.5H20C10.8873 69.5 3.5 62.1127 3.5 53V20Z" fill="white" stroke="#BFCDFA" stroke-width="7"/>
+            </svg>
+                                    
+            <!-- 체크표시 아이콘 -->
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="75" height="79" viewBox="0 0 75 79" fill="none" style="display: none;">
+                <path d="M20 9.5H54C63.1127 9.5 70.5 16.8873 70.5 26V59C70.5 68.1127 63.1127 75.5 54 75.5H20C10.8873 75.5 3.5 68.1127 3.5 59V26C3.5 16.8873 10.8873 9.5 20 9.5Z" fill="white" stroke="#BFCDFA" stroke-width="7"/>
+                <line y1="-3.5" x2="30.7531" y2="-3.5" transform="matrix(0.715487 0.698627 -0.583573 0.812061 15.6182 34.3623)" stroke="#14B03D" stroke-width="7"/>
+                <line y1="-3.5" x2="62.1089" y2="-3.5" transform="matrix(0.588179 -0.808731 0.71106 0.703131 37.6213 55.8499)" stroke="#14B03D" stroke-width="7"/>
+            </svg>
+
+        </div>
+
+        <!-- 노래 3 버튼 -->
+        <div class="svg-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="102" height="82" viewBox="0 0 102 82" fill="none">
+                <path d="M29.9792 81.3333C46.053 81.3333 59.0833 72.3044 59.0833 61.1667C59.0833 50.0289 46.053 41 29.9792 41C13.9054 41 0.875 50.0289 0.875 61.1667C0.875 72.3044 13.9054 81.3333 29.9792 81.3333Z" fill="#7282EB"/>
+                <rect x="43.2083" y="11.6666" width="15.875" height="47.6667" fill="#7282EB"/>
+                <rect x="43.2083" y="0.666626" width="58.2083" height="22" rx="2" fill="#7282EB"/>
+            </svg>
+            
+            <a href="{{ url_for('song3') }}" class="track-button" data-track="Love_yonsei">
+                <button class="custom-button" data-track="Love_yonsei">연세여 사랑한다</button>
+            </a>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="74" height="73" viewBox="0 0 74 73" fill="none">
+                <path d="M3.5 20C3.5 10.8873 10.8873 3.5 20 3.5H54C63.1127 3.5 70.5 10.8873 70.5 20V53C70.5 62.1127 63.1127 69.5 54 69.5H20C10.8873 69.5 3.5 62.1127 3.5 53V20Z" fill="white" stroke="#BFCDFA" stroke-width="7"/>
+            </svg>
+                                    
+            <!-- 체크표시 아이콘 -->
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="75" height="79" viewBox="0 0 75 79" fill="none" style="display: none;">
+                <path d="M20 9.5H54C63.1127 9.5 70.5 16.8873 70.5 26V59C70.5 68.1127 63.1127 75.5 54 75.5H20C10.8873 75.5 3.5 68.1127 3.5 59V26C3.5 16.8873 10.8873 9.5 20 9.5Z" fill="white" stroke="#BFCDFA" stroke-width="7"/>
+                <line y1="-3.5" x2="30.7531" y2="-3.5" transform="matrix(0.715487 0.698627 -0.583573 0.812061 15.6182 34.3623)" stroke="#14B03D" stroke-width="7"/>
+                <line y1="-3.5" x2="62.1089" y2="-3.5" transform="matrix(0.588179 -0.808731 0.71106 0.703131 37.6213 55.8499)" stroke="#14B03D" stroke-width="7"/>
+            </svg>
+
+        </div>
+    </div>
+</body>
+</html>
